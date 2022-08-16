@@ -8,6 +8,7 @@ provider "aws" {
   skip_requesting_account_id  = true
 
   endpoints {
+    kms            = "http://localhost:4566"
     apigateway     = "http://localhost:4566"
     apigatewayv2   = "http://localhost:4566"
     cloudformation = "http://localhost:4566"
